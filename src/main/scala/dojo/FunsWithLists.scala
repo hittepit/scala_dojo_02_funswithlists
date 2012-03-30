@@ -29,4 +29,5 @@ object FunsWithLists {
 
   def zipWithKey = (f: (Game) => String, ls: List[Game]) => ls.map(f(_)) zip ls
 
+  def firstGameWithRating(rating:Int) = (ls:List[Game]) => ls.find(_.rating == rating).orNull
 }
